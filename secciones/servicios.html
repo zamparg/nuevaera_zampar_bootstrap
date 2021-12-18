@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="header__nav__logo">
+                <a href="#"><img src="../imgs/logo-desktop-negative.png" alt="Logo-NuevaEra" ></a>                </div>
+            <div class="header__nav__buttons">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../secciones/servicios.html">Servicios</a></li>
+                    <li><a href="../secciones/quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="../secciones/nuestrosclientes.html">Nuestros Clientes</a></li>
+                    <li><a href="../secciones/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="encabezado encabezado--servicios">
+            <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image">
+            <h1>Servicios</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, recusandae rerum harum maiores distinctio expedita!</p>
+        </div>
+    <main>
+        <section class="servicio section--bgcolor3">
+            <!--Servicios que ofrecen -->
+            <h2 class="section__title">Titulo 2</h2>
+            <div class="servicios__container">
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-pintura.jpg" alt="servicio_de_pintura">
+                    <h3>Pintura</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-drywall.jpg" alt="servicio_de_drywall">
+                    <h3>Drywall</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-plomeria.jpg" alt="servicio_de_plomeria">
+                    <h3>Plomería</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-proyectos.jpg" alt="servicio_de_proyectos">
+                    <h3>Proyectos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-albanil.jpg" alt="servicio_de_albanileria">
+                    <h3>Albañilería</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-electronica.jpg" alt="servicio_de_electronica">
+                    <h3>Electrónica</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-electricidad.jpg" alt="servicio_de_electricidad">
+                    <h3>Electricidad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-remodelaciones.jpg" alt="servicio_de_remodelaciones">
+                    <h3>Remodelaciones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+                <article class="servicio__card">
+                    <img src="../imgs/servicios-seguridad.jpg" alt="servicio_de_seguridad">
+                    <h3>Cámaras de Seguridad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate!</p>
+                </article>
+            </div>    
+        </section>
+<!-- FORMULARIO DE PRESUPUESTO -->
+        <section class="form form--horizontal section--bgcolor2">
+            <div>
+                <h2 class="section__title">Solicitar presupuesto</h2>
+                <form action="#" method="post">
+                    <div class="form--horizontal__section">
+                        <label for="nombre">Nombre y Apellido:</label><br>
+                        <input type="text" name="nombre" required class="f_h_input"><br>
+                        <label for="telefono">Nro de Teléfono:</label><br>
+                        <input type="number" name="telefono" required class="f_h_input"><br>
+                    </div>
+                    <div class="form--horizontal__section">
+                        <label for="email">E-Mail:</label><br>
+                        <input type="email" name="email" placeholder="ejemplo@ejemplo.com" class="f_h_input"><br>
+                        <label for="barrio">Barrio:</label><br>
+                        <input type="text" name="Barrio" required class="f_h_input"><br>
+                    </div>
+                    <div class="form--horizontal__section">
+                        <label for="presupuesto">Describa el trabajo que desea presupuestar</label><br>
+                        <textarea cols="35" rows="3"></textarea><br>
+                    </div>
+                    <div class="form--horizontal__section form--horizontal__section--button">
+                        <input type="submit" name="enviarform" value="Solicitar presupuesto" class="form--horizontal__button form__button">    
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__section footer__section__main">
+            <img src="../imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
+        </div>
+        <div class="footer__section footer__section__coment">
+            <h4>Comentarios de nuestros clientes</h4>
+            <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
+            <p><b>Nombre de la persona</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatum?</p>
+        </div>
+        <div class="footer__section footer__section__map">
+            <h4>Nuestro Sitio</h4>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienessomos.html">Quiénes somos</a></li>
+                <li><a href="nuestrosclientes.html">Nuestros clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section__contact">
+            <div>
+                <h4>¡Contactanos!</h4>
+                <ul>
+                    <li>
+                        <a href="tel:+5491125861985">
+                            <img src="../imgs/icon-tel.png" alt="icon-tel" class="footer__section__icon">
+                            <p>1125861985</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contacto@nuevaera.com.ar">
+                            <img src="../imgs/icon-mail.png" alt="icon-mail" class="footer__section__icon">
+                            <p>contacto@nuevaera.com.ar</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__section__redes">
+                <h4>Nuestras redes</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/nuevaeraservicios"><img src="../imgs/icon-insta.png" alt="icon-insta" class="footer__section__icon"></a></li>
+                    <li><a href=><img src="../imgs/icon-face.png" alt="icon-face" class="footer__section__icon"></a></li>
+                    <li><a href="https://wa.link/z5n4pq"><img src="../imgs/icon-whatsapp.png" alt="icon-whatsapp" class="footer__section__icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

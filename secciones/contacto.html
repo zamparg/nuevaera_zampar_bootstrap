@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="header__nav__logo">
+                <a href="#"><img src="../imgs/logo-desktop-negative.png" alt="Logo-NuevaEra" ></a>                </div>
+            <div class="header__nav__buttons">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../secciones/servicios.html">Servicios</a></li>
+                    <li><a href="../secciones/quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="../secciones/nuestrosclientes.html">Nuestros Clientes</a></li>
+                    <li><a href="../secciones/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="encabezado encabezado--contacto">
+            <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image">
+            <h1>CONTACTO</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, recusandae rerum harum maiores distinctio expedita!</p>        
+        </div>
+    <main class="contacto__main">
+        <section class="form form--contacto section--bgcolor2">
+            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="nombre">Nombre y Apellido: </label><br>
+                <input type="text" name="nombre" id=""><br>
+                <label for="telefono">Número de teléfono:</label><br>
+                <input type="number" name="telefono"><br>
+                <label for="email">Email:</label><br>
+                <input type="mail" name="email" placeholder="ejemplo@ejemplo.com"><br>
+                <label for="servicio">Tipo de servicio:</label><br>
+                <select name="servicio" >
+                    <option value="pintura">Pintura</option>
+                    <option value="drywall">Drywall</option>
+                    <option value="plomeria">Plomería</option>
+                    <option value="proyectos">Proyectos</option>
+                    <option value="albañileria">Albañilería</option>
+                    <option value="electronica">Electrónica</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="remodelaciones">Remodelaciones</option>
+                    <option value="camaras">Cámaras de Seguridad</option>
+                    <option value="otros">Otros</option>
+                </select><br>
+                <label for="Archivo">Agregar fotos <em>(opativo)</em></label><br>
+                <input type="file" name="archivo" id=""><br>
+                <label for="encuesta">¿Ya realizó otros trabajos con nosotros?</label><br>
+                <span>Si</span><input type="radio" name="encuesta" value="si" class="radio">
+                <span>No</span><input type="radio" name="encuesta" value="no" class="radio">
+                <br>
+                <label for="comentario">Mensaje:</label><br>
+                <textarea name="comentario"cols="30" rows="10"></textarea><br>
+                <input type="submit" name="send" value="Enviar Consulta" class="form__button">
+                <input type="reset" name="reset" value="Borrar" class="form__button">
+            </form>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__section footer__section__main">
+            <img src="../imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
+        </div>
+        <div class="footer__section footer__section__coment">
+            <h4>Comentarios de nuestros clientes</h4>
+            <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
+            <p><b>Nombre de la persona</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatum?</p>
+        </div>
+        <div class="footer__section footer__section__map">
+            <h4>Nuestro Sitio</h4>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienessomos.html">Quiénes somos</a></li>
+                <li><a href="nuestrosclientes.html">Nuestros clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section__contact">
+            <div>
+                <h4>¡Contactanos!</h4>
+                <ul>
+                    <li>
+                        <a href="tel:+5491125861985">
+                            <img src="../imgs/icon-tel.png" alt="icon-tel" class="footer__section__icon">
+                            <p>1125861985</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contacto@nuevaera.com.ar">
+                            <img src="../imgs/icon-mail.png" alt="icon-mail" class="footer__section__icon">
+                            <p>contacto@nuevaera.com.ar</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__section__redes">
+                <h4>Nuestras redes</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/nuevaeraservicios"><img src="../imgs/icon-insta.png" alt="icon-insta" class="footer__section__icon"></a></li>
+                    <li><a href=><img src="../imgs/icon-face.png" alt="icon-face" class="footer__section__icon"></a></li>
+                    <li><a href="https://wa.link/z5n4pq"><img src="../imgs/icon-whatsapp.png" alt="icon-whatsapp" class="footer__section__icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
