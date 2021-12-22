@@ -96,6 +96,7 @@ header {
 .header__nav li {
     display: inline-block;
     padding: 10px;
+    transition: transform 0.5s;
 }
 .header__nav li a:visited {
     color: #F7F7F7;
@@ -103,6 +104,7 @@ header {
 .header__nav li:hover {
     background-color: #FF8820;
     border-radius: 25px 0 0 0 ;
+    transform: scale(1.1);
 }
 /* Encabezado*/
 
@@ -115,6 +117,11 @@ header {
     width:16%;
     padding-top: 50px;
     padding-bottom: 25px;
+    animation-name: rotate;
+    animation-duration: 1.7s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
 .encabezado h1 {
     margin-bottom: 25px;
@@ -162,6 +169,19 @@ header {
     padding-top: 100px;
     padding-bottom: 25px;
     margin-left: 42%;
+    animation-name: rotate;
+    animation-duration: 1.7s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 .principal__title {
     color: #0D2B49;
@@ -219,6 +239,10 @@ header {
     margin: 20px;
     display:inline-block;
     border-radius: 20px;
+    transition: all 0.7s;
+}
+.card:hover{
+    transform:scale(1.15);
 }
 .card__img {
     width: 40%;
@@ -300,6 +324,10 @@ header {
     text-align: center;
     border-radius: 10px;
     display: inline-block;
+    transition: all 0.7s;
+}
+.servicio__card:hover{
+    transform:scale(1.15);
 }
 .servicio__card img{
     width: 96%;
@@ -394,6 +422,13 @@ header {
 .galeria__card__img3 {
     width: 100%;
     grid-area: galeriaImg3;
+}
+.galeria__card__img{
+    transition: all 0.5s;
+}
+.galeria__card__img:hover{
+    transform: scale(1.1);
+    border-radius: 15px;
 }
 /* FORMULARIO GENERAL*/
 
@@ -513,6 +548,7 @@ header {
     background-size: cover;
     position: fixed;
     top: 300px;
+    right: 0px;
 }
 /* Footer */
 
