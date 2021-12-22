@@ -770,10 +770,22 @@ header {
         position: relative;
         left: 50%;
     }
-
+    .form--contacto form {
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    .form--contacto form input, .form--contacto form select, .form--contacto form textarea{
+        margin-bottom: 15px;
+    }
+    .form--contacto form textarea{
+        width: 100%;
+    }
    /* Footer tablet */
     .footer{
         align-items: center;
+    }
+    .footer__section__map ul li{
+        padding-top: 5px;
     }
 }
 
@@ -847,19 +859,33 @@ header {
         height: 75vh;
         width: 100%;
     }
+    .form {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
     .form--vertical form{
         padding-left: 15%;
         padding-right: 15%;
     }
     .form input {
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
         height: 30px;
         width: 100%;
     }
+    .form .form__button{
+        margin-top: 18px;
+        height: 40px;
+        padding-top: 12px;  
+        background-color: #0D2B49;
+        color: #F7F7F7;
+    }
     .form--vertical form textarea{
-        width: 95%;
+        width: 100%;
         height: 60px;
         margin-left: 0;
     }
+
     .form--horizontal__section {
         width: 75%;
         display: block;
@@ -868,6 +894,7 @@ header {
     .form--horizontal form {
         margin-left: 5%;
         margin-right: 5%;
+        height: auto;
         padding-top: 10px;
         border: #F7F7F7 solid 3px;
         border-radius: 10px;
@@ -882,6 +909,7 @@ header {
         margin-left: 0;
         margin-right: 0;
     }
+
     .form--horizontal form textarea{
         margin: 0;
         width: 100%;
@@ -890,6 +918,9 @@ header {
     .form--horizontal__button {
         margin: 0;
         margin-top: 20px;
+   }
+   .form--horizontal__section--button{
+       height: auto;
    }
     .staff__container{
         margin-top: 20px;
@@ -919,14 +950,18 @@ header {
     .galeria__card {
         width: 100%;
         margin: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         grid-template-areas: 
         "galeriaTitulo"
         "galeriaDescripcion"
         "galeriaImg1"
         "galeriaImg2"
         "galeriaImg3";
+    }
+    .servicio__card{
+        padding: 10px;
+        margin-bottom: 10px;
     }
     /* Formulario pagina de contacto */
     .contacto__main {
@@ -943,6 +978,9 @@ header {
         padding-left: 5%;
         padding-right: 5%;
     }
+    .form--contacto form input, .form--contacto form select, .form--contacto form textarea {
+        margin-bottom: 20px;
+    }
     /* footer mobile */
     .footer{
         text-align: center;
@@ -958,6 +996,29 @@ header {
     .footer__section__logo {
         width: 60%;
     }
+    .footer__section__coment p{
+        padding-top: 15px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .footer__section__map ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__section__map ul li{
+        margin-top: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #FF8820;
+        color: #F7F7F7;
+        border-radius: 15px;
+        width: 60%;
+    }
+    .footer__section__map ul li a:visited{
+        color: #F7F7F7;
+    }
+
     .footer__section__contact {
         display: flex;
         flex-direction: column;
@@ -977,4 +1038,10 @@ header {
     .footer__section__redes .footer__section__icon {
         width: 70%;
     }
+    .footer__section__contact ul li a{
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
 }
