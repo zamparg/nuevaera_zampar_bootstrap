@@ -44,7 +44,7 @@
         </section>
         <section class="slider ">
             <!-- SLIDER CON FOTOS -->
-            <div id="demo" class="carousel slide" data-ride="carousel">
+            <div id="demo" class="carousel slide " data-ride="carousel">
 
                 <!-- Indicadores -->
                 <ul class="carousel-indicators">
@@ -62,14 +62,14 @@
                         <p class="carousel-caption-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                       </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item ">
                     <img src="imgs/slider-nuevaera01.jpg" alt="Drywall">
                     <div class="carousel-caption">
                         <h3>Título1</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item ">
                     <img src="imgs/slider-nuevaera02.jpg" alt="Contacto">
                     <div class="carousel-caption">
                         <h3>Título1</h3>
@@ -92,110 +92,113 @@
 
             <!-- MISION CORPORATIVA -->
             <h2 class="section__title ">Titulo 2</h2>
-            <div class="mision__cardContainer">
-                <div class="card card1">
-                    <img src="imgs/icon-mision1.png" alt="" class="card__img">
-                    <h3 class="card__title">Nuestra Misión</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="mision__cardContainer card-deck">
+                <div class="card card1 card-mision">
+                    <img src="imgs/icon-mision1.png" alt="" class="card__img card-img-top">
+                    <h3 class="card__title card-title">Nuestra Misión</h3>
+                    <p class="card__description card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="card card2">
-                    <img src="imgs/icon-mision2.png" alt="" class="card__img">
-                    <h3 class="card__title">Nuestra Visión</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="card card2 card-mision">
+                    <img src="imgs/icon-mision2.png" alt="" class="card__img card-img-top">
+                    <h3 class="card__title card-title">Nuestra Visión</h3>
+                    <p class="card__description card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="card card3">
-                    <img src="imgs/icon-mision3.png" alt="" class="card__img">
-                    <h3 class="card__title">Nuestros Valores</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="card card3 card-mision">
+                    <img src="imgs/icon-mision3.png" alt="" class="card__img card-img-top">
+                    <h3 class="card__title card-title">Nuestros Valores</h3>
+                    <p class="card__description card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </section>
-        <section class="corporative section--bgcolor2 container-fluid row">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xcJtL7QggTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-md-8 col-sm-12"></iframe>
+        <section class=" section--bgcolor2 container-fluid">
+            <div class="row corporative">
+                <iframe src="https://www.youtube.com/embed/xcJtL7QggTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-md-8 col-sm-12 videoIframe"></iframe>
 
-                <!-- FORMULARIO DE SOLICITUD DE PRESUPUESTO -->
-            <div class="form form--vertical section--bgcolor2 col-md-4 col-sm-12">
-                <h2 >Solicitar Presupuesto</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="nombre">Nombre y Apellido:</label><br>
-                        <input type="text" name="nombre" required class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Nro de Teléfono:</label><br>
-                        <input type="number" name="telefono" required class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-Mail:</label><br>
-                        <input type="email" name="email" placeholder="ejemplo@ejemplo.com" class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="barrio">Barrio:</label><br>
-                        <input type="text" name="Barrio" required class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="presupuesto">Describa el trabajo que desea presupuestar</label><br>
-                        <textarea cols="21" rows="5" class="form-control"></textarea><br>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" name="enviarform" value="Solicitar presupuesto" class="form__button">    
-                    </div>
-                </form>
+                    <!-- FORMULARIO DE SOLICITUD DE PRESUPUESTO -->
+                <div class="form form--vertical section--bgcolor2 col-md-4 col-sm-12">
+                    <h2 >Solicitar Presupuesto</h2>
+                    <form action="#" method="post">
+                        <div class="form-group form-group-vertical">
+                            <label for="nombre">Nombre y Apellido:</label><br>
+                            <input type="text" name="nombre" required class="form-control"><br>
+                        </div>
+                        <div class="form-group form-group-vertical">
+                            <label for="telefono">Nro de Teléfono:</label><br>
+                            <input type="number" name="telefono" required class="form-control"><br>
+                        </div>
+                        <div class="form-group form-group-vertical">
+                            <label for="email">E-Mail:</label><br>
+                            <input type="email" name="email" placeholder="ejemplo@ejemplo.com" class="form-control"><br>
+                        </div>
+                        <div class="form-group form-group-vertical">
+                            <label for="barrio">Barrio:</label><br>
+                            <input type="text" name="Barrio" required class="form-control"><br>
+                        </div>
+                        <div class="form-group form-group-vertical">
+                            <label for="presupuesto">Describa el trabajo que desea presupuestar</label><br>
+                            <textarea cols="21" rows="5" class="form-control"></textarea><br>
+                        </div>
+                        <div class="form-group form-group-vertical">
+                            <input type="submit" name="enviarform" value="Solicitar presupuesto" class="form__button">    
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="footer__section footer__section__main">
-                <img src="imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
-            </div>
-            <div class="footer__section footer__section__coment">
-                <h4>Comentarios de nuestros clientes</h4>
-                <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
-                <p><b>Nombre de la persona</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatum?</p>
-            </div>
-            <div class="footer__section footer__section__map">
-                <h4>Nuestro Sitio</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="secciones/servicios.html">Servicios</a></li>
-                    <li><a href="secciones/quienessomos.html">Quiénes somos</a></li>
-                    <li><a href="secciones/nuestrosclientes.html">Nuestros clientes</a></li>
-                    <li><a href="secciones/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer__section footer__section__contact">
-                <div>
-                    <h4>¡Contactanos!</h4>
+        <footer class="footer container-fluid section--bgcolor1">
+            <div class="row">
+                <div class="footer__section footer__section__main  text-center col-md-3 col-sm-12">
+                    <img src="imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
+                </div>
+                <div class="footer__section footer__section__coment  text-center col-md-3 col-sm-12">
+                    <h4>Comentarios de nuestros clientes</h4>
+                    <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
+                    <p><b>Nombre de la persona</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatum?</p>
+                </div>
+                <div class="footer__section footer__section__map  text-center col-md-3 col-sm-6">
+                    <h4>Nuestro Sitio</h4>
                     <ul>
-                        <li>
-                            <a href="tel:+5491125861985">
-                                <img src="imgs/icon-tel.png" alt="icon-tel" class="footer__section__icon">
-                                <p>1125861985</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:contacto@nuevaera.com.ar">
-                                <img src="imgs/icon-mail.png" alt="icon-mail" class="footer__section__icon">
-                                <p>contacto@nuevaera.com.ar</p>
-                            </a>
-                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="secciones/servicios.html">Servicios</a></li>
+                        <li><a href="secciones/quienessomos.html">Quiénes somos</a></li>
+                        <li><a href="secciones/nuestrosclientes.html">Nuestros clientes</a></li>
+                        <li><a href="secciones/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="footer__section__redes">
-                    <h4>Nuestras redes</h4>
-                    <ul>
-                        <li><a href="https://www.instagram.com/nuevaeraservicios"><img src="imgs/icon-insta.png" alt="icon-insta" class="footer__section__icon"></a></li>
-                        <li><a href=><img src="imgs/icon-face.png" alt="icon-face" class="footer__section__icon"></a></li>
-                        <li><a href="https://wa.link/z5n4pq"><img src="imgs/icon-whatsapp.png" alt="icon-whatsapp" class="footer__section__icon"></a></li>
-                    </ul>
+                <div class="footer__section footer__section__contact  text-center col-md-3 col-sm-6">
+                    <div>
+                        <h4>¡Contactanos!</h4>
+                        <ul>
+                            <li>
+                                <a href="tel:+5491125861985">
+                                    <img src="imgs/icon-tel.png" alt="icon-tel" class="footer__section__icon">
+                                    <p>1125861985</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contacto@nuevaera.com.ar">
+                                    <img src="imgs/icon-mail.png" alt="icon-mail" class="footer__section__icon">
+                                    <p>contacto@nuevaera.com.ar</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__section__redes">
+                        <h4>Nuestras redes</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/nuevaeraservicios"><img src="imgs/icon-insta.png" alt="icon-insta" class="footer__section__icon"></a></li>
+                            <li><a href=><img src="imgs/icon-face.png" alt="icon-face" class="footer__section__icon"></a></li>
+                            <li><a href="https://wa.link/z5n4pq"><img src="imgs/icon-whatsapp.png" alt="icon-whatsapp" class="footer__section__icon"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
     <a href="https://wa.link/z5n4pq"><div class="whatsapp-left"></div></a>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
