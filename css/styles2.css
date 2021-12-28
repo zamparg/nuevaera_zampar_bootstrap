@@ -246,7 +246,39 @@ a:visited {
     font-style: italic;
 }
 
-
+/*CARD DE SERVICIOS*/
+.servicio__card {
+    background-color: #0D2B49;
+    color: #F7F7F7;
+    padding: 10px;
+    border-radius: 10px;
+}
+.servicios__container{
+    margin-left:20px ;
+    margin-right: 20px;
+}
+.servicio__card {
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+.servicio__card:hover{
+    transform:scale(1.05);
+    z-index: 2;
+    border: #F7F7F7 5px solid;
+}
+.servicio__card img{
+    width: 96%;
+    margin: 2%;
+    border-radius: 10px;
+}
+.card-columns {
+    gap: 25px;
+}
+@media only screen and (min-width: 578px) and (max-width:1023px){
+    .card-columns {
+        column-count: 2;}
+}
 /*VIDEO */
 .corporative {
     align-items: center;
@@ -258,6 +290,7 @@ a:visited {
 }
 
 /*FORMULARIO VERTICAL*/
+
 .form--vertical {
     padding-top: 20px;
 }
@@ -272,7 +305,22 @@ a:visited {
 .form-control{
     border-radius: 10px;
 }
+/*FORMULARIO HORIZONTAL*/
 
+.form--horizontal{
+    height: auto;
+    margin-bottom: 15px;
+}
+.form--horizontal__section{
+    justify-content: center;
+    margin: 0px;
+}
+.form--horizontal__section .offset-1 {
+    margin-left: 0;
+} 
+.form--horizontal__button {
+    height: 40px;
+}
 /*FOOTER*/
 .footer {
     margin-right: 0;
