@@ -596,6 +596,7 @@ header {
 }
 .footer__section__icon {
     width: 30px;
+    height: 30px;
 }
 
 
@@ -1035,9 +1036,7 @@ header {
         justify-content: space-evenly;
         margin-top: 15px;
     }
-    .footer__section__redes .footer__section__icon {
-        width: 70%;
-    }
+
     .footer__section__contact ul li a{
         padding-bottom: 20px;
         display: flex;
