@@ -5,29 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Clientes</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles2.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
     <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
 </head>
 <body>
-    <header>
-        <nav class="header__nav">
-            <div class="header__nav__logo">
-                <a href="#"><img src="../imgs/logo-desktop-negative.png" alt="Logo-NuevaEra" ></a>                </div>
-            <div class="header__nav__buttons">
-                <ul>
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="../secciones/servicios.html">Servicios</a></li>
-                    <li><a href="../secciones/quienessomos.html">Quienes Somos</a></li>
-                    <li><a href="../secciones/nuestrosclientes.html">Nuestros Clientes</a></li>
-                    <li><a href="../secciones/contacto.html">Contacto</a></li>
+    <header class="container-fluid">
+        <nav class="row header__nav navbar navbar-expand-md section--bgcolor1">
+            <div class="header__nav__logo col-xs-4">
+                <a href="#" ><img src="../imgs/logo-desktop-negative.png" alt="Logo-NuevaEra" class="navbar-brand"></a>
+            </div>
+             <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler col-xs-4" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="header__nav__buttons offset-md-1 col-md-8 collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="./servicios.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="./quienessomos.html" class="nav-link">Quienes Somos</a></li>
+                    <li class="nav-item"><a href="./nuestrosclientes.html" class="nav-link">Nuestros Clientes</a></li>
+                    <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-        <div class="encabezado encabezado--nuestrosclientes">
-            <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image">
-            <h1>Nuestros clientes</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis recusandae, sint quaerat accusantium distinctio.</p>
+        <div class="encabezado encabezado--nuestrosclientes container-fluid ">
+            <div class="row">
+                <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image offset-md-4 col-md-4 offset-md-4 offset-2 col-8 offset-2">
+                <h1 class="col-12">Nuestros clientes</h1>
+                <p class="col-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam blanditiis recusandae, sint quaerat accusantium distinctio.</p>
+            </div>
         </div>
     <main>
         <section class="comentarios">
@@ -76,53 +86,60 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer__section footer__section__main">
-            <img src="../imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
-        </div>
-        <div class="footer__section footer__section__coment">
-            <h4>Comentarios de nuestros clientes</h4>
-            <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
-            <p><b>Nombre de la persona</b></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatum?</p>
-        </div>
-        <div class="footer__section footer__section__map">
-            <h4>Nuestro Sitio</h4>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="quienessomos.html">Quiénes somos</a></li>
-                <li><a href="nuestrosclientes.html">Nuestros clientes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="footer__section footer__section__contact">
-            <div>
-                <h4>¡Contactanos!</h4>
+    <footer class="footer container-fluid section--bgcolor1">
+        <div class="row">
+            <div class="footer__section footer__section__main  text-center col-md-3 col-sm-12">
+                <img src="../imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
+            </div>
+            <div class="footer__section footer__section__coment  text-center col-md-3 col-sm-12">
+                <h4>Comentarios de nuestros clientes</h4>
+                <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
+                <p><b>Nombre de la persona</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptatum?</p>
+            </div>
+            <div class="footer__section footer__section__map  text-center col-md-3 col-sm-6">
+                <h4>Nuestro Sitio</h4>
                 <ul>
-                    <li>
-                        <a href="tel:+5491125861985">
-                            <img src="../imgs/icon-tel.png" alt="icon-tel" class="footer__section__icon">
-                            <p>1125861985</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:contacto@nuevaera.com.ar">
-                            <img src="../imgs/icon-mail.png" alt="icon-mail" class="footer__section__icon">
-                            <p>contacto@nuevaera.com.ar</p>
-                        </a>
-                    </li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./quienessomos.html">Quiénes somos</a></li>
+                    <li><a href="./nuestrosclientes.html">Nuestros clientes</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div class="footer__section__redes">
-                <h4>Nuestras redes</h4>
-                <ul>
-                    <li><a href="https://www.instagram.com/nuevaeraservicios"><img src="../imgs/icon-insta.png" alt="icon-insta" class="footer__section__icon"></a></li>
-                    <li><a href=><img src="../imgs/icon-face.png" alt="icon-face" class="footer__section__icon"></a></li>
-                    <li><a href="https://wa.link/z5n4pq"><img src="../imgs/icon-whatsapp.png" alt="icon-whatsapp" class="footer__section__icon"></a></li>
-                </ul>
+            <div class="footer__section footer__section__contact  text-center col-md-3 col-sm-6">
+                <div>
+                    <h4>¡Contactanos!</h4>
+                    <ul>
+                        <li>
+                            <a href="tel:+5491125861985">
+                                <img src="../imgs/icon-tel.png" alt="icon-tel" class="footer__section__icon">
+                                <p>1125861985</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contacto@nuevaera.com.ar">
+                                <img src="../imgs/icon-mail.png" alt="icon-mail" class="footer__section__icon">
+                                <p>contacto@nuevaera.com.ar</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section__redes">
+                    <h4>Nuestras redes</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/nuevaeraservicios"><img src="../imgs/icon-insta.png" alt="icon-insta" class="footer__section__icon"></a></li>
+                        <li><a href=><img src="../imgs/icon-face.png" alt="icon-face" class="footer__section__icon"></a></li>
+                        <li><a href="https://wa.link/z5n4pq"><img src="../imgs/icon-whatsapp.png" alt="icon-whatsapp" class="footer__section__icon"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+</div>
+<a href="https://wa.link/z5n4pq"><div class="whatsapp-left"></div></a>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

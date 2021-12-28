@@ -131,6 +131,46 @@ a:visited {
     padding: 25px;
 }
 
+/*ENCABEZADOS*/
+
+.encabezado {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.encabezado img {
+    width:16%;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    animation-name: rotate;
+    animation-duration: 1.7s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+.encabezado h1 {
+    margin-bottom: 25px;
+}
+.encabezado p {
+    font-style: italic;
+}
+
+.encabezado--servicios {
+    background-image: url(../imgs/servicios-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.encabezado--quienessomos {
+    background-image: url(../imgs/quienessomos-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.encabezado--nuestrosclientes {
+    background-image: url(../imgs/nuestrosclientes-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 /*SLIDER*/
 .slider {
     width: 100%;
@@ -269,7 +309,6 @@ a:visited {
     width: 30px;
     height: 30px;
 }
-
 
 
 /*MOBILE*/
