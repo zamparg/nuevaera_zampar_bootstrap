@@ -2,6 +2,65 @@
 * {
     font-family: rubik;
 }
+
+/* GENERAL */
+h1 {
+    font-family: rubik;
+    font-weight: 400;
+    font-size: 300%;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 {
+    font-family: rubik;
+    font-weight: 700;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3, h4, h5, h6 {
+    font-family: rubik;
+    font-weight: 400;
+    font-size: 125%;
+    text-transform: uppercase;
+    text-align: center;
+}
+p, li {
+    font-family: rubik;
+    font-weight: 400;
+    font-size: 100%;
+}
+a:link {
+    color: #F7F7F7;
+}
+a:visited {
+    color: #FF8820;
+}
+/*Color secciones */
+
+.section--bgcolor1 {
+    background-color: #0D2B49;
+}
+.section--bgcolor2 {
+    background-color:#FF8820;
+}
+.section--bgcolor3 {
+    background-color: #F7F7F7;
+}
+
+/*Color textos */
+
+.text--color1 {
+    color: #0D2B49;
+}
+.text--color2 {
+    color:#FF8820;
+}
+.text--color3 {
+    color: #F7F7F7;
+}
+
+
 /*HEADER*/
 .bg-dark {
     background-color: #0D2B49 !important;
@@ -13,6 +72,9 @@
     justify-content: end;
 }
 .nav-link{
+    color: #F7F7F7;
+}
+.nav-link:visited{
     color: #F7F7F7;
 }
 .nav-link:hover{
@@ -27,4 +89,51 @@
 }
 .navbar{
     flex-wrap: nowrap;
+}
+/*INDEX - PRINCIPAL*/
+
+.principal {
+    height: 85vh;
+    background-image: url(../imgs/principal-background01.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.principal__image{
+
+    padding-bottom: 25px;
+    padding-top: 50px;
+    animation-name: rotate;
+    animation-duration: 1.7s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+.principal__title {
+    color: #0D2B49;
+}
+.principal__subtitle {
+    color: #FF8820;
+}
+.principal__description {
+    text-align: center;
+    font-style: italic;
+    padding: 25px;
+}
+
+/*SLIDER*/
+.slider {
+    height: 500px;
 }
