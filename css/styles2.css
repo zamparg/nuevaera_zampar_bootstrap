@@ -279,6 +279,13 @@ a:visited {
     .card-columns {
         column-count: 2;}
 }
+
+/*STAFF*/
+.staff {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 /*VIDEO */
 .corporative {
     align-items: center;
@@ -320,6 +327,25 @@ a:visited {
 } 
 .form--horizontal__button {
     height: 40px;
+}
+
+/* FORMULARIO CONTACTO */
+
+.contacto__main {
+    background-image: url(../imgs/servicios-albanil.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 0;
+    margin-right: 0;
+}
+.form--contacto {
+    padding-top: 20px;
+}
+.form--contacto .form-group {
+    margin-bottom: 0;
+}
+.form--contacto .form-group label {
+    font-style: italic ;
 }
 /*FOOTER*/
 .footer {

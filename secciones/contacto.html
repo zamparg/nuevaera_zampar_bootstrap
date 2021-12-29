@@ -39,40 +39,62 @@
                 <p class="col-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, recusandae rerum harum maiores distinctio expedita!</p>     
             </div>   
         </div>
-    <main class="contacto__main">
-        <section class="form form--contacto section--bgcolor2">
-            <form action="" method="post" enctype="application/x-www-form-urlencoded">
-                <label for="nombre">Nombre y Apellido: </label><br>
-                <input type="text" name="nombre" id=""><br>
-                <label for="telefono">Número de teléfono:</label><br>
-                <input type="number" name="telefono"><br>
-                <label for="email">Email:</label><br>
-                <input type="mail" name="email" placeholder="ejemplo@ejemplo.com"><br>
-                <label for="servicio">Tipo de servicio:</label><br>
-                <select name="servicio" >
-                    <option value="pintura">Pintura</option>
-                    <option value="drywall">Drywall</option>
-                    <option value="plomeria">Plomería</option>
-                    <option value="proyectos">Proyectos</option>
-                    <option value="albañileria">Albañilería</option>
-                    <option value="electronica">Electrónica</option>
-                    <option value="electricidad">Electricidad</option>
-                    <option value="remodelaciones">Remodelaciones</option>
-                    <option value="camaras">Cámaras de Seguridad</option>
-                    <option value="otros">Otros</option>
-                </select><br>
-                <label for="Archivo">Agregar fotos <em>(opativo)</em></label><br>
-                <input type="file" name="archivo" id=""><br>
-                <label for="encuesta">¿Ya realizó otros trabajos con nosotros?</label><br>
-                <span>Si</span><input type="radio" name="encuesta" value="si" class="radio">
-                <span>No</span><input type="radio" name="encuesta" value="no" class="radio">
-                <br>
-                <label for="comentario">Mensaje:</label><br>
-                <textarea name="comentario"cols="30" rows="10"></textarea><br>
-                <input type="submit" name="send" value="Enviar Consulta" class="form__button">
-                <input type="reset" name="reset" value="Borrar" class="form__button">
-            </form>
-        </section>
+        
+    <main class="contacto__main container-fluid ">
+        <div class="row">
+            <section class=" form--contacto section--bgcolor2 col-xs-12  offset-xl-7 col-xl-5 offset-sm-4 col-sm-8>
+                <form action="" method="post" enctype="application/x-www-form-urlencoded" class="form">
+                    <h2 class="">Formulario de contacto</h2>
+                    <div class="form-group ">
+                        <label for="nombre">Nombre y Apellido: </label><br>
+                        <input type="text" name="nombre" id="" class="form-control"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono:</label><br>
+                        <input type="number" name="telefono" class="form-control"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label><br>
+                        <input type="mail" name="email" placeholder="ejemplo@ejemplo.com" class="form-control"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Tipo de servicio:</label><br>
+                        <select name="servicio" class="form-control">
+                            <option value="pintura">Pintura</option>
+                            <option value="drywall">Drywall</option>
+                            <option value="plomeria">Plomería</option>
+                            <option value="proyectos">Proyectos</option>
+                            <option value="albañileria">Albañilería</option>
+                            <option value="electronica">Electrónica</option>
+                            <option value="electricidad">Electricidad</option>
+                            <option value="remodelaciones">Remodelaciones</option>
+                            <option value="camaras">Cámaras de Seguridad</option>
+                            <option value="otros">Otros</option>
+                        </select><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="Archivo">Agregar fotos <em>(opativo)</em></label><br>
+                        <input type="file" name="archivo" id="" class="form-control"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="encuesta">¿Ya realizó otros trabajos con nosotros?</label><br>
+                        <span>Si</span><input type="radio" name="encuesta" value="si" class="radio">
+                        <span>No</span><input type="radio" name="encuesta" value="no" class="radio">
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">Mensaje:</label><br>
+                        <textarea name="comentario"cols="30" rows="10" class="form-control"></textarea><br>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="send" value="Enviar Consulta" class="form__button form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="reset" name="reset" value="Borrar" class="form__button form-control">
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
     <!-- FOOTER -->
     <footer class="footer container-fluid section--bgcolor1">
