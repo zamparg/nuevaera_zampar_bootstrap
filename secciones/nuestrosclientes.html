@@ -41,46 +41,60 @@
         </div>
     <main>
         <section class="comentarios">
-            <h2 class="section__title">Comentarios de nuestros Clientes</h2>
+            <h2 class="section__title p-5">Comentarios de nuestros Clientes</h2>
             <!--Comentarios de clientes. Se puede tomar de ML?-->
-            <div class="comentarios__container">
-                <article class="comentarios__card">
-                    <img src="../imgs/icon-mision1.png" alt="icon" class="comentarios__card__icon">
-                    <p><strong>Ramón Escalante</strong></p>
-                    <img src="../imgs/star.png" alt="icon" class="comentarios__card__stars">
-                    <p><em>Excelente trabajo. Quedo solucionado el problema en el momento. El precio es bueno.</em></p>
+            <div class="comentarios__container container-fluid card-deck">
+                <article class="comentarios__card card">
+                    <img src="../imgs/icon-mision1.png" alt="icon" class="comentarios__card__icon .rounded-circle mx-auto d-block mt-3">
+                    <div class="card-body">
+                        <p class="card-tittle"><strong>Ramón Escalante</strong></p>
+                        <img src="../imgs/star.png" alt="icon" class="comentarios__card__stars mx-auto d-block pb-3">
+                        <p class="card-text"><em>Excelente trabajo. Quedo solucionado el problema en el momento. El precio es bueno.</em></p>
+                    </div>
+                    </article>
+                <article class="comentarios__card card">
+                    <img src="../imgs/icon-mision1.png" alt="icon" class="comentarios__card__icon .rounded-circle mx-auto d-block mt-3">
+                    <div class="card-body">
+                        <p class="card-tittle"><strong>Ariel Fernandez</strong></p>
+                        <img src="../imgs/star.png" alt="icon" class="comentarios__card__stars mx-auto d-block pb-3">
+                        <p class="card-text"><em>100% profesionales y confiables. Detectaron un problema en nuestra casa que todos los anteriores plomeros no pudieron. Relación precio-trabajo excelente.</em></p>
+                    </div>
                 </article>
-                <article class="comentarios__card">
-                    <img src="../imgs/icon-mision1.png" alt="icon" class="comentarios__card__icon">
-                    <p><strong>Ariel Fernandez</strong></p>
-                    <img src="../imgs/star.png" alt="icon" class="comentarios__card__stars">
-                    <p><em>100% profesionales y confiables. Detectaron un problema en nuestra casa que todos los anteriores plomeros no pudieron. Relación precio-trabajo excelente.</em></p>
-                </article>
-                <article class="comentarios__card">
-                    <img src="../imgs/icon-mision1.png" alt="icon" class="comentarios__card__icon">
-                    <p><strong>Lorena Magariño</strong></p>
-                    <img src="../imgs/star.png" alt="icon" class="comentarios__card__stars">
-                    <p><em>Te asesoran en todo desde el principio y son super detallistas!! muy capacitados. Mi marido y yo, chochos. Muy recomendables.</em></p>
+                <article class="comentarios__card card">
+                    <img src="../imgs/icon-mision1.png" alt="icon" class="comentarios__card__icon .rounded-circle mx-auto d-block mt-3">
+                    <div class="card-body"> 
+                        <p class="card-tittle"><strong>Lorena Magariño</strong></p>
+                        <img src="../imgs/star.png" alt="icon" class="comentarios__card__stars mx-auto d-block pb-3">
+                        <p class="card-text"><em>Te asesoran en todo desde el principio y son super detallistas!! muy capacitados. Mi marido y yo, chochos. Muy recomendables.</em></p>
+                    </div>
                 </article>
             </div>
         </section>
-        <section>
+        <section class="container-fluid">
             <!--Galeria de Trabajos-->
-            <h2 class="section__title">Galería de Trabajos</h2>
-            <div class="galeria__container">
-                <div class="galeria__card">
-                    <h3><em>Reparación de cocina</em></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, itaque?</p>
-                    <img src="../imgs/cliente-cocina01.jpg" alt="repacion_de_cocina01" class="galeria__card__img galeria__card__img1">
-                    <img src="../imgs/cliente-cocina02.jpg" alt="repacion_de_cocina02" class="galeria__card__img galeria__card__img2">
-                    <img src="../imgs/cliente-cocina03.jpg" alt="repacion_de_cocina03" class="galeria__card__img galeria__card__img3">
+            <h2 class="section__title p-5">Galería de Trabajos</h2>
+            <div class="galeria__container card-deck">
+                <div class="galeria__card card p-3 m-3 ">
+                    <div class="card-body">
+                        <h3 class="card-tittle"><em>Reparación de cocina</em></h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, itaque?</p>
+                    </div>
+                    <div class="row">
+                        <img src="../imgs/cliente-cocina01.jpg" alt="repacion_de_cocina01" class="galeria__card__img galeria__card__img1 col-12 col-md-6">
+                        <img src="../imgs/cliente-cocina02.jpg" alt="repacion_de_cocina02" class="galeria__card__img galeria__card__img2 col-12 col-md-6">
+                        <img src="../imgs/cliente-cocina03.jpg" alt="repacion_de_cocina03" class="galeria__card__img galeria__card__img3 col-12 col-md-12">
+                    </div>
                 </div>
-                <div class="galeria__card">
-                    <h3><em>Reparación de Baño</em></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, itaque?</p>
-                    <img src="../imgs/cliente-bano01.jpg" alt="repacion_de_banio01" class="galeria__card__img galeria__card__img1">
-                    <img src="../imgs/cliente-bano02.jpg" alt="repacion_de_banio02" class="galeria__card__img galeria__card__img2">
-                    <img src="../imgs/cliente-bano02.jpg" alt="repacion_de_banio02" class="galeria__card__img galeria__card__img3">
+                <div class="galeria__card card p-3 m-3">
+                    <div class="card-body">
+                        <h3 class="card-tittle"><em>Reparación de Baño</em></h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, itaque?</p>
+                    </div>
+                    <div class="row">
+                        <img src="../imgs/cliente-bano01.jpg" alt="repacion_de_banio01" class="galeria__card__img galeria__card__img1 col-12 col-md-6">
+                        <img src="../imgs/cliente-bano02.jpg" alt="repacion_de_banio02" class="galeria__card__img galeria__card__img2 col-12 col-md-6">
+                        <img src="../imgs/cliente-bano02.jpg" alt="repacion_de_banio02" class="galeria__card__img galeria__card__img3 col-12 col-md-12">
+                    </div>
                 </div>
             </div>
         </section>
