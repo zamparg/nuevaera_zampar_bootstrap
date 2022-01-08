@@ -1,0 +1,36 @@
+/*FOOTER*/
+.footer {
+    margin-right: 0;
+    margin-left: 0;
+}
+.footer__section {
+    background-color: $color3;
+    border: none;
+    color: $color1;
+    padding: 10px;
+    padding-top: 20px;
+    align-items: center;
+}
+.footer__section__logo{
+    width: 70%;
+}
+.footer__section ul {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-inline-start: 0;
+}
+.footer__section__contact ul li a{
+    display: flex;
+    gap: 10px;
+}
+.footer__section__redes ul{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer__section__icon {
+    width: 30px;
+    height: 30px;
+}
