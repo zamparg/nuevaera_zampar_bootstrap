@@ -34,3 +34,30 @@
     width: 30px;
     height: 30px;
 }
+
+/*MOBILE*/
+@media only screen and (max-width: 767px){
+
+    .footer__section__coment p{
+        padding-top: 15px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .footer__section__map ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__section__map ul li{
+        margin-top: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: $color2;
+        color: $color1;
+        border-radius: 15px;
+        width: 60%;
+    }
+    .footer__section__map ul li a:visited{
+        color: $color1;
+    }
+}

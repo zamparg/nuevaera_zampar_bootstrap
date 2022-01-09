@@ -1,0 +1,51 @@
+/*FORMULARIO VERTICAL*/
+
+.form--vertical {
+    padding-top: 20px;
+}
+.form-group-vertical {
+    margin-bottom: 0;
+}
+.form__button {
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 15px;
+}
+.form-control{
+    border-radius: 10px;
+}
+/*FORMULARIO HORIZONTAL*/
+
+.form--horizontal{
+    height: auto;
+    margin-bottom: 15px;
+}
+.form--horizontal__section{
+    justify-content: center;
+    margin: 0px;
+}
+.form--horizontal__section .offset-1 {
+    margin-left: 0;
+} 
+.form--horizontal__button {
+    height: 40px;
+}
+
+/* FORMULARIO CONTACTO */
+
+.contacto__main {
+    background-image: url(../imgs/servicios-albanil.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 0;
+    margin-right: 0;
+}
+.form--contacto {
+    padding-top: 20px;
+}
+.form--contacto .form-group {
+    margin-bottom: 0;
+}
+.form--contacto .form-group label {
+    font-style: italic ;
+}
