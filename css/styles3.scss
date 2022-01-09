@@ -420,5 +420,59 @@ a:visited {
     }
 }
 
+
+
+//CARDS CON SLIDERS PARA COMENTARIOS, CAMBIAR LAS CLASES
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+.carousel-inner__comentarios {
+    padding: 1em;
+    img{
+        width: 60px;
+        height: 60px;
+        border: $color3 solid 3px;
+        border-radius: 100%;
+    }
+    .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: 4px $color3 solid;
+        padding: 10px;
+        border-radius: 15px;
+        align-items: center;
+        .card-body{
+            text-align: center;
+            padding: 0.7em;
+            .card-title{
+                padding: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.d-md-block{
+    text-align:center;
+  }
+
+.carousel-control-prev__comentarios,
+.carousel-control-next__comentarios {
+    background-color: #cac9c9;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-inner__comentarios .card {
+        width: 30%;
+    }
+  }
+
+
 @import "header";
 @import "footer";
