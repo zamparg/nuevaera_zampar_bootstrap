@@ -200,6 +200,8 @@ a:visited {
 .servicios__container{
     margin-left:20px ;
     margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .servicio__card {
     text-align: center;
@@ -209,7 +211,6 @@ a:visited {
 .servicio__card:hover{
     transform:scale(1.05);
     z-index: 2;
-    border: $color1 5px solid;
 }
 .servicio__card img{
     width: 96%;
@@ -263,21 +264,21 @@ a:visited {
     text-align: left;
 }
 
-/*CARDS DE COMENTARIOS*/
-.comentarios__card__stars{
-    width: 100px;
-}
-.comentarios__card {
-    border: $color3 3px solid;
-    border-radius: 10px;
-    text-align: center;
-    display: inline-block;
-}
-.comentarios__card__icon {
-    width: 75px;
-    border: $color3 solid 3px;
-    border-radius: 100%;
-}
+// /*CARDS DE COMENTARIOS*/
+// .comentarios__card__stars{
+//     width: 100px;
+// }
+// .comentarios__card {
+//     border: $color3 3px solid;
+//     border-radius: 10px;
+//     text-align: center;
+//     display: inline-block;
+// }
+// .comentarios__card__icon {
+//     width: 75px;
+//     border: $color3 solid 3px;
+//     border-radius: 100%;
+// }
 
 /*GALERIA CARDS*/
 .galeria__card{
@@ -306,7 +307,42 @@ a:visited {
     padding-top: 15px;
 }
 
+/*BOTÓN DE ML*/
+.btn-ml{
+    text-align: center;
+    height: 70px;
+    .btn{
+        background-color: $color2;
+        border-radius: 10px;
+        margin-top: 30px;
+        border: none;
+    }
+    .btn:hover{
+        background-color: $color1;
+        color: $color2 !important;
+        box-sizing: border-box;
+        border: $color2 3px solid;
+    }
+    .btn:visited{
+        color: $color1;
+    }
+}
+
+/*BOTÓN DE WHATSAPP*/
+.whatsapp-left{
+    background-image: url(../imgs/icon-whatsapp-left.png);
+    background-size: cover;
+    background-position:center;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    top:110px;
+    right:0px;
+    box-shadow: 2px 6px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
 @import "carousel";
-@import "formlarios";
+@import "formularios";
 @import "header";
 @import "footer";

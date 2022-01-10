@@ -88,3 +88,40 @@
         width: auto;
     }
 }
+
+/*CAROUSEL DE COMENTARIOS - FOOTER*/
+.carousel-inner__comentarios--footer {
+    padding: 0;
+    img{
+        width: 60px;
+        height: 60px;
+        border: $color3 solid 3px;
+        border-radius: 100%;
+    }
+    .card {
+        background-color: $color3;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 15px;
+        align-items: center;
+        .card-body{
+            text-align: center;
+            padding: 0;
+            padding-top: 10px;
+            .card-title{
+                padding: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.carousel-control-prev__footer,
+.carousel-control-next__footer {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
