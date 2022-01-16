@@ -10,23 +10,23 @@ $color3: #0D2B49;
 }
 
 /* GENERAL */
+@mixin text-set($font-weight, $font-size, $text-transform,$text-align) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-transform: $text-transform;
+    text-align: $text-align;
+ }
+ 
+
 h1 {
-    font-weight: 700;
-    font-size: 300%;
-    text-transform: uppercase;
-    text-align: center;
+    @include text-set(700, 300%, uppercase, center);
 }
+
 h2 {
-    font-weight: 700;
-    font-size: 150%;
-    text-transform: uppercase;
-    text-align: center;
+    @include text-set(700, 150%, uppercase, center);
 }
 h3, h4, h5, h6 {
-    font-weight: 400;
-    font-size: 125%;
-    text-transform: uppercase;
-    text-align: center;
+    @include text-set(400, 125%, uppercase, center);
 }
 p, li {
     font-weight: 400;
@@ -39,21 +39,22 @@ a:visited {
     color: $color2;
 }
 /*Color secciones */
+$secciones:(
+    bgcolor1:$color3,
+    bgcolor2:$color2,
+    bgcolor3:$color1,
+);
 
-.section--bgcolor1 {
-    background-color: $color3;
-}
-.section--bgcolor2 {
-    background-color:$color2;
-}
-.section--bgcolor3 {
-    background-color: $color1;
+@each $seccion, $colorsec in $secciones{
+    .section--#{$seccion}{
+        background-color: $colorsec;
+    }
 }
 
 /*Color textos */
 
 .text--color1 {
-    color: $color3;
+    color: map-get($secciones,bgcolor1);
 }
 .text--color2 {
     color:$color2;
@@ -191,24 +192,28 @@ a:visited {
 }
 
 /*CARD DE SERVICIOS*/
-.servicio__card {
-    background-color: $color3;
-    color: $color1;
-    padding: 10px;
-    border-radius: 10px;
-}
+
 .servicios__container{
     margin-left:20px ;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 .servicio__card {
+ padding: 0;
+}
+.servicio__card--body{
+    background-color: $color3;
+    color: $color1;
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
     border-radius: 10px;
     transition: all 0.7s;
+    margin: 7px;
 }
-.servicio__card:hover{
+.servicio__card--body:hover{
     transform:scale(1.05);
     z-index: 2;
 }
@@ -217,13 +222,14 @@ a:visited {
     margin: 2%;
     border-radius: 10px;
 }
-.card-columns {
-    gap: 25px;
-}
-@media only screen and (min-width: 578px) and (max-width:1023px){
-    .card-columns {
-        column-count: 2;}
-}
+
+// .card-columns {
+//     gap: 25px;
+// }
+// @media only screen and (min-width: 578px) and (max-width:1023px){
+//     .card-columns {
+//         column-count: 2;}
+// }
 
 /*STAFF*/
 .staff {

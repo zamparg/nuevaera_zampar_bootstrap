@@ -14,9 +14,13 @@
     right: 27%;
     bottom: 12%;
 }
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next {
     width: 10%;
 }
+.carousel-control-prev{
+    @extend .carousel-control-next;
+}
+
 .carousel-caption-text {
     text-transform: italic;
 }
@@ -103,7 +107,6 @@
         margin: 0;
         box-shadow: none;
         padding: 0;
-        border-radius: 15px;
         align-items: center;
         .card-body{
             text-align: center;

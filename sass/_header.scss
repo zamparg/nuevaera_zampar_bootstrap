@@ -1,0 +1,33 @@
+/*HEADER*/
+
+.navbar-brand {
+    width: 70%;
+}
+.header__nav__buttons {
+    justify-content: end;
+}
+.nav-link{
+    color: $color1;
+}
+.nav-link:visited{
+    color: $color1;
+}
+.nav-link:hover{
+    background-color: rgba(255, 136, 32,0.9);
+    color: $color1;
+    border-radius: 5px;
+}
+.navbar-collapse{
+    flex-basis: 100%;
+}
+.navbar-toggler-icon{
+    background-image: url(../imgs/iconmenucol.png);
+    background-size: cover;
+}
+@media (max-width:768px){
+    .header__nav{
+        a{
+            width: 70%;
+        }
+    }
+}
