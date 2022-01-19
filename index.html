@@ -9,7 +9,6 @@
     <meta name="keywords" content="Servicios integrales, refacciones, plomero, electricista, carpintero, reparaciones, arquitecto, construcción, materiales, diseño de interiores, mano de obra, constructora, viviendas">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles3.css">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 </head>
 <body>
@@ -117,7 +116,7 @@
                     <!-- FORMULARIO DE SOLICITUD DE PRESUPUESTO -->
                 <div class="form form--vertical section--bgcolor2 col-md-4 col-sm-12">
                     <h2 >Solicitar Presupuesto</h2>
-                    <form action="#" method="post">
+                    <form action="php/form.php" method="POST" name="index-form" id="index-form">
                         <div class="form-group form-group-vertical">
                             <label for="nombre">Nombre y Apellido:</label><br>
                             <input type="text" name="nombre" required class="form-control"><br>
@@ -132,11 +131,11 @@
                         </div>
                         <div class="form-group form-group-vertical">
                             <label for="barrio">Barrio:</label><br>
-                            <input type="text" name="Barrio" required class="form-control"><br>
+                            <input type="text" name="barrio" required class="form-control"><br>
                         </div>
                         <div class="form-group form-group-vertical">
                             <label for="presupuesto">Describa el trabajo que desea presupuestar</label><br>
-                            <textarea cols="21" rows="5" class="form-control"></textarea><br>
+                            <textarea cols="21" rows="5" class="form-control" name="presupuesto"></textarea><br>
                         </div>
                         <div class="form-group form-group-vertical">
                             <input type="submit" name="enviarform" value="Solicitar presupuesto" class="form__button">    
@@ -223,9 +222,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:contacto@nuevaera.com.ar">
+                                <a href="mailto:contacto@nuevaeraservicios.com.ar">
                                     <img src="imgs/icon-mail.png" alt="icon-mail" class="footer__section__icon">
-                                    <p>contacto@nuevaera.com.ar</p>
+                                    <p>contacto@nuevaeraservicios.com.ar</p>
                                 </a>
                             </li>
                         </ul>
