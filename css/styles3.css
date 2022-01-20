@@ -496,14 +496,6 @@ a:visited {
   }
 }
 
-/*Mobile*/
-@media only screen and (max-width: 767px) {
-  .carousel-inner img {
-    height: 500px;
-    width: auto;
-  }
-}
-
 /*CAROUSEL DE COMENTARIOS - FOOTER*/
 .carousel-inner__comentarios--footer {
   padding: 0;
