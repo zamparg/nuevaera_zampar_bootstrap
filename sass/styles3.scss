@@ -73,6 +73,7 @@ $secciones:(
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +104,6 @@ $secciones:(
     color: $color2;
 }
 .principal__description {
-
     font-style: italic;
     padding: 25px;
     @include text-set(700, 100%, normal, center);
@@ -132,21 +132,25 @@ $secciones:(
 .encabezado p {
     font-style: italic;
 }
-
-.encabezado--servicios {
-    background-image: url(../imgs/servicios-background.jpg);
+.encabezado--contacto{
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.encabezado--servicios {
+    @extend .encabezado--contacto;
+    background-image: url(../imgs/servicios-background.jpg);
 }
 .encabezado--quienessomos {
+    @extend .encabezado--contacto;
     background-image: url(../imgs/quienessomos-background.jpg);
-    background-position: center;
-    background-size: cover;
+
 }
 .encabezado--nuestrosclientes {
+    @extend .encabezado--contacto;
     background-image: url(../imgs/nuestrosclientes-background.jpg);
-    background-position: center;
-    background-size: cover;
+
 }
 
 
@@ -178,8 +182,8 @@ $secciones:(
     transform:scale(1.15);
 }
 .card__img {
-    width: 40%;
-    border:solid 7px  $color3;
+    width: 20%;
+    border:solid 5px  $color3;
     border-radius: 100%;
 
 }

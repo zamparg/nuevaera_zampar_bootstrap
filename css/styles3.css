@@ -72,6 +72,7 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,22 +170,23 @@ a:visited {
   font-style: italic;
 }
 
-.encabezado--servicios {
-  background-image: url(../imgs/servicios-background.jpg);
+.encabezado--contacto, .encabezado--servicios, .encabezado--quienessomos, .encabezado--nuestrosclientes {
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.encabezado--servicios {
+  background-image: url(../imgs/servicios-background.jpg);
 }
 
 .encabezado--quienessomos {
   background-image: url(../imgs/quienessomos-background.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .encabezado--nuestrosclientes {
   background-image: url(../imgs/nuestrosclientes-background.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 /*CARDS*/
@@ -221,8 +223,8 @@ a:visited {
 }
 
 .card__img {
-  width: 40%;
-  border: solid 7px #0D2B49;
+  width: 20%;
+  border: solid 5px #0D2B49;
   border-radius: 100%;
 }
 
@@ -691,6 +693,8 @@ a:visited {
 .footer {
   margin-right: 0;
   margin-left: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .footer__section {
