@@ -2,6 +2,18 @@
 
 .form--vertical {
     padding-top: 20px;
+    border-radius: 15px 0 0 0;
+    h2{
+    color:$color1;
+    }
+    label{
+        color:$color2;
+    }
+    .form__button{
+        background-color: $color2;
+        color:$color1;
+        height: 35px;
+    }
 }
 .form-group-vertical {
     margin-bottom: 0;
@@ -18,7 +30,21 @@
 
 .form--horizontal{
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    border-radius: 15px ;
+
+    h2{
+    color:$color1;
+    }
+    label{
+        color:$color2;
+    }
+    .form__button{
+        background-color: $color2;
+        color:$color1;
+        height: 35px;
+    }
+
 }
 .form--horizontal__section{
     justify-content: center;
@@ -42,6 +68,18 @@
 }
 .form--contacto {
     padding-top: 20px;
+    border-radius: 15px 0 0 15px;
+    h2{
+        color:$color1;
+        }
+        label, span{
+            color:$color2;
+        }
+        .form__button{
+            background-color: $color2;
+            color:$color1;
+            height: 35px;
+        }
 }
 .form--contacto .form-group {
     margin-bottom: 0;

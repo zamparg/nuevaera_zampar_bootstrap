@@ -103,9 +103,10 @@ $secciones:(
     color: $color2;
 }
 .principal__description {
-    text-align: center;
+
     font-style: italic;
     padding: 25px;
+    @include text-set(700, 100%, normal, center);
 }
 
 /*ENCABEZADOS*/
@@ -209,7 +210,6 @@ $secciones:(
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    border-radius: 10px;
     transition: all 0.7s;
     margin: 7px;
 }

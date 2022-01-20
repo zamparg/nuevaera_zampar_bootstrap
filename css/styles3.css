@@ -130,9 +130,12 @@ a:visited {
 }
 
 .principal__description {
-  text-align: center;
   font-style: italic;
   padding: 25px;
+  font-weight: 700;
+  font-size: 100%;
+  text-transform: normal;
+  text-align: center;
 }
 
 /*ENCABEZADOS*/
@@ -251,7 +254,6 @@ a:visited {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  border-radius: 10px;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
   margin: 7px;
@@ -407,7 +409,7 @@ a:visited {
 }
 
 .carousel-caption {
-  background-color: rgba(13, 43, 73, 0.7);
+  background-color: rgba(13, 43, 73, 0.8);
   color: #F7F7F7;
   border-radius: 15px;
   left: 27%;
@@ -549,6 +551,21 @@ a:visited {
 /*FORMULARIO VERTICAL*/
 .form--vertical {
   padding-top: 20px;
+  border-radius: 15px 0 0 0;
+}
+
+.form--vertical h2 {
+  color: #F7F7F7;
+}
+
+.form--vertical label {
+  color: #FF8820;
+}
+
+.form--vertical .form__button {
+  background-color: #FF8820;
+  color: #F7F7F7;
+  height: 35px;
 }
 
 .form-group-vertical {
@@ -568,7 +585,22 @@ a:visited {
 /*FORMULARIO HORIZONTAL*/
 .form--horizontal {
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+.form--horizontal h2 {
+  color: #F7F7F7;
+}
+
+.form--horizontal label {
+  color: #FF8820;
+}
+
+.form--horizontal .form__button {
+  background-color: #FF8820;
+  color: #F7F7F7;
+  height: 35px;
 }
 
 .form--horizontal__section {
@@ -597,6 +629,21 @@ a:visited {
 
 .form--contacto {
   padding-top: 20px;
+  border-radius: 15px 0 0 15px;
+}
+
+.form--contacto h2 {
+  color: #F7F7F7;
+}
+
+.form--contacto label, .form--contacto span {
+  color: #FF8820;
+}
+
+.form--contacto .form__button {
+  background-color: #FF8820;
+  color: #F7F7F7;
+  height: 35px;
 }
 
 .form--contacto .form-group {
@@ -659,7 +706,7 @@ a:visited {
   border: none;
   color: #F7F7F7;
   padding: 10px;
-  padding-top: 20px;
+  padding-top: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -667,6 +714,7 @@ a:visited {
 
 .footer__section__logo {
   width: 70%;
+  padding-top: 10px;
 }
 
 .footer__section ul {
