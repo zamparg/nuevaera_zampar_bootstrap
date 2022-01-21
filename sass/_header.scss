@@ -1,5 +1,13 @@
 /*HEADER*/
-
+header{
+    padding-bottom: 99px;
+}
+.navbar-expand-md{
+    position: fixed;
+    width: 100%;
+    z-index: 16;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
 .navbar-brand {
     width: 70%;
 }

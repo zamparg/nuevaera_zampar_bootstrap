@@ -3,6 +3,8 @@
 .form--vertical {
     padding-top: 20px;
     border-radius: 15px 0 0 0;
+    padding-right: 25px;
+    padding-left: 25px;
     h2{
     color:$color1;
     }
@@ -69,6 +71,8 @@
 .form--contacto {
     padding-top: 20px;
     border-radius: 15px 0 0 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     h2{
         color:$color1;
         }

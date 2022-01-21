@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/styles3.css">
 </head>
 <body>
-    <header class="container-fluid">
+    <header >
         <nav class="header__nav navbar navbar-expand-md section--bgcolor1">
             <a href="#"><img src="../imgs/logo-desktop-negative.png" alt="Logo-NuevaEra" class="navbar-brand"></a>
             <!-- Toggler/collapsibe Button-->
@@ -35,13 +35,23 @@
             <div class="row">
                 <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image offset-md-4 col-md-4 offset-md-4 offset-2 col-8 offset-2">
                 <h1 class="col-12">Contacto</h1>
-                <p class="col-12">Comunicate con nosotros para obtener una visita técnica y un presupuesto sin cargo.</p>     
+                <p class="col-12">Comunicate con nosotros para obtener una visita técnica y un presupuesto sin cargo</p>
+                <div class="col-12 mb-4">
+                    <a href="mailto:contacto@nuevaeraservicios.com.ar">
+                    <img src="../imgs/icon-mail.png" alt="icon-mail" class="d-inline-block contacto--icon">
+                    <span class="d-inline-block contacto--text">contacto@nuevaeraservicios.com.ar</p>
+                    </a>
+                    <a href="tel:+5491125861985">
+                    <img src="../imgs/icon-whatsapp.png" alt="icon-mail" class="d-inline-block contacto--icon">
+                    <span class="d-inline-block contacto--text">+54 9 11 2586 1985</p>
+                    </a>
+                </div>
             </div>   
         </div>
         
     <main class="contacto__main container-fluid ">
         <div class="row">
-            <section class=" form--contacto section--bgcolor1 col-xs-12  offset-xl-7 col-xl-5 offset-sm-4 col-sm-8>
+            <section class=" form--contacto section--bgcolor1 col-xs-12  offset-xl-7 col-xl-5 offset-sm-4 col-sm-8">
                 <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" class="form">
                     <h2 class="">Formulario de contacto</h2>
                     <div class="form-group ">
@@ -184,6 +194,14 @@
             </div>
         </div>
     </footer>
+    <div class="copyright section--bgcolor3 text-center ">
+        <script type="text/javascript">
+            copyright=new Date();
+            update=copyright.getFullYear();
+            document.write("Nueva Era Servicios Integrales © " + update + " " + "- Diseño: Gastón Zampar");
+            </script>
+    </div>
+
 </div>
 <a href="https://wa.link/z5n4pq"><div class="whatsapp-left"></div></a>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

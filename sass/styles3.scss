@@ -116,7 +116,7 @@ $secciones:(
     height: auto;
     text-align: center;
 }
-.encabezado img {
+.encabezado .encabezado__image {
     width:16%;
     padding-top: 50px;
     padding-bottom: 25px;
@@ -131,6 +131,7 @@ $secciones:(
 }
 .encabezado p {
     font-style: italic;
+    font-weight: 700;
 }
 .encabezado--contacto{
     background-position: center;
@@ -153,6 +154,16 @@ $secciones:(
 
 }
 
+.contacto--icon{
+    border-radius: 100%;
+    height: 40px;
+
+}
+.contacto--text{
+    margin: 0;
+    color: #212529;
+    font-weight: 400;
+}
 
 
 /*CARDS*/
@@ -327,8 +338,20 @@ $secciones:(
     top:110px;
     right:0px;
     box-shadow: 2px 6px 8px 0 rgba(0, 0, 0, 0.4);
+    z-index: 17;
+}
+@media (max-width:767px){
+    .whatsapp-left{
+        top: 130px;
+    }
 }
 
+/*Copyright*/
+.copyright{
+    color: $color3;
+    background-color: $color1;
+    font-size: 75%;
+    }
 @import "carousel";
 @import "formularios";
 @import "header";
