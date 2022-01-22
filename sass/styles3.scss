@@ -38,7 +38,8 @@ a:link {
 a:visited {
     color: $color2;
 }
-/*Color secciones */
+
+/*SECCIONES */
 $secciones:(
     bgcolor1:$color3,
     bgcolor2:$color2,
@@ -51,7 +52,7 @@ $secciones:(
     }
 }
 
-/*Color textos */
+/*TEXTOS - COLOR */
 
 .text--color1 {
     color: map-get($secciones,bgcolor1);
@@ -166,7 +167,7 @@ $secciones:(
 }
 
 
-/*CARDS*/
+/*CARDS MISION CORPORATIVA*/
 .card{
     border-radius: 0.5rem;
     border:none;
@@ -239,7 +240,7 @@ $secciones:(
 }
 
 
-/*STAFF*/
+/*CARDS DE STAFF*/
 .staff {
     height: auto;
     padding-top: 20px;
@@ -278,7 +279,7 @@ $secciones:(
     text-align: left;
 }
 
-/*GALERIA CARDS*/
+/*PANELES DE GALERÍA*/
 .galeria__card{
     background-color: $color3;
     color: $color1;
@@ -295,7 +296,7 @@ $secciones:(
     transform: scale(1.06);
 
 }
-/*VIDEO */
+/*VIDEO - INDEX */
 .corporative {
     align-items: center;
 }
@@ -305,7 +306,9 @@ $secciones:(
     padding-top: 15px;
 }
 
-/*BOTÓN DE ML*/
+/* BOTONES */
+
+/*Botón de Mercadolibre*/
 .btn-ml{
     text-align: center;
     height: 70px;
@@ -326,7 +329,7 @@ $secciones:(
     }
 }
 
-/*BOTÓN DE WHATSAPP*/
+/*Botón de Whatsapp*/
 .whatsapp-left{
     background-image: url(../imgs/icon-whatsapp-left.png);
     background-size: cover;
@@ -346,12 +349,7 @@ $secciones:(
     }
 }
 
-/*Copyright*/
-.copyright{
-    color: $color3;
-    background-color: $color1;
-    font-size: 75%;
-    }
+
 @import "carousel";
 @import "formularios";
 @import "header";

@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
 </head>
 <body>
+    <!-- BARRA DE NAVEGACIÓN -->
     <header>
         <nav class="header__nav navbar navbar-expand-md section--bgcolor1">
             <a href="../index.html"><img src="../imgs/logo-desktop-negative.png" alt="Logo-NuevaEra" class="navbar-brand"></a>
@@ -31,18 +32,20 @@
             </div>
         </nav>
     </header>
-        <div class="encabezado encabezado--nuestrosclientes container-fluid ">
-            <div class="row">
-                <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image offset-md-4 col-md-4 offset-md-4 offset-2 col-8 offset-2">
-                <h1 class="col-12">Nuestros clientes</h1>
-            </div>
+    <!-- FIN DE BARRA DE NAVEGACIÓN -->
+    <!-- ENCABEZADO -->
+    <div class="encabezado encabezado--nuestrosclientes container-fluid ">
+        <div class="row">
+            <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image offset-md-4 col-md-4 offset-md-4 offset-2 col-8 offset-2">
+            <h1 class="col-12">Nuestros clientes</h1>
         </div>
+    </div>
+    <!-- FIN DE ENCABEZADO -->
+    <!-- SLIDER CON COMENTARIOS -->
     <main>
         <section class="comentarios">
             <h2 class="section__title p-4">Comentarios de nuestros Clientes</h2>
-            
-            <!--Comentarios de clientes. Se puede tomar de ML?-->
-
+            <!--Carousel de comentarios-->
             <div id="carouselComentariosControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner carousel-inner__comentarios">
                     <div class="carousel-item active">
@@ -139,17 +142,20 @@
                 <span class="sr-only">Next</span>
                 </a>
             </div>
-    <!--Fin comentarios de Clientes -->
+            <!--Fin carousel de comentarios de Clientes -->
+            <!--Botón a ML -->
         <div class="btn-ml"><a class="btn" href="https://servicio.mercadolibre.com.ar/MLA-1100493683-plomero-nueva-era-servicios-_JM#reviews" role="button" target=_blank>Más opiniones en MercadoLibre</a></div>
         </section>
+    <!-- FIN DE SLIDER CON COMENTARIOS -->
+    <!-- GALERÍA DE TRABAJOS -->
         <section class="container-fluid">
             <!--Galeria de Trabajos-->
             <h2 class="section__title p-5">Galería de Trabajos</h2>
             <div class="galeria__container card-deck">
+                <!-- Galería 1 -->
                 <div class="galeria__card card p-3 m-3 ">
                     <div class="card-body">
                         <h3 class="card-tittle"><em>Reparación de cocina</em></h3>
-                   
                     </div>
                     <div class="row">
                         <img src="../imgs/cliente-cocina01.jpg" alt="repacion_de_cocina01" class="galeria__card__img galeria__card__img1 col-12 col-md-6">
@@ -157,10 +163,10 @@
                         <img src="../imgs/cliente-cocina03.jpg" alt="repacion_de_cocina03" class="galeria__card__img galeria__card__img3 col-12 col-md-12">
                     </div>
                 </div>
+                <!-- Galería 2 -->
                 <div class="galeria__card card p-3 m-3">
                     <div class="card-body">
                         <h3 class="card-tittle"><em>Reparación de Baño</em></h3>
-                     
                     </div>
                     <div class="row">
                         <img src="../imgs/cliente-bano01.jpg" alt="repacion_de_banio01" class="galeria__card__img galeria__card__img1 col-12 col-md-6">
@@ -170,17 +176,19 @@
                 </div>
             </div>
         </section>
+    <!-- FIN DE GALERÍA DE TRABAJOS -->
     </main>
     <!-- FOOTER -->
     <footer class="footer container-fluid section--bgcolor1">
         <div class="row">
+            <!-- Sección de Logo -->
             <div class="footer__section footer__section__main  text-center col-md-3 col-sm-12">
                 <img src="../imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
             </div>
+            <!-- Sección de comentarios -->
             <div class="footer__section footer__section__coment  text-center col-md-3 col-sm-12">
                 <h4>Comentarios</h4>
-                <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
-                            <!--Comentarios de clientes. Se puede tomar de ML?-->
+                <!-- Carousel de Comentarios -->
 
             <div id="carouselFooterControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner carousel-inner__comentarios--footer">
@@ -227,8 +235,9 @@
                 <span class="sr-only">Next</span>
                 </a>
             </div>
-    <!--Fin comentarios de Clientes -->
+            <!-- Fin de Carousel de Comentarios -->
             </div>
+            <!-- Sección Mapa de Sitio -->
             <div class="footer__section footer__section__map  text-center col-md-3 col-sm-6">
                 <h4>Nuestro Sitio</h4>
                 <ul>
@@ -239,6 +248,7 @@
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
+            <!-- Sección de Contacto -->
             <div class="footer__section footer__section__contact  text-center col-md-3 col-sm-6">
                 <div>
                     <h4 class="pb-2">¡Contactanos!</h4>
@@ -260,6 +270,8 @@
             </div>
         </div>
     </footer>
+    <!-- FIN DE FOOTER -->
+    <!-- COPYRIGHT-->
     <div class="copyright section--bgcolor3 text-center ">
         <script type="text/javascript">
             copyright=new Date();
@@ -267,11 +279,12 @@
             document.write("Nueva Era Servicios Integrales © " + update + " " + "- Diseño: Gastón Zampar");
             </script>
     </div>
-
-</div>
-<a href="https://wa.link/z5n4pq"><div class="whatsapp-left"></div></a>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <!--FIN DE COPYRIGHT-->
+    <!-- BOTÓN DE WHATSAPP -->
+    <a href="https://wa.link/z5n4pq"><div class="whatsapp-left"></div></a>
+    <!-- FIN DE BOTÓN DE WHATSAPP -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

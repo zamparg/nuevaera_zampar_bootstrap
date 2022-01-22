@@ -39,7 +39,7 @@ a:visited {
   color: #FF8820;
 }
 
-/*Color secciones */
+/*SECCIONES */
 .section--bgcolor1 {
   background-color: #0D2B49;
 }
@@ -52,7 +52,7 @@ a:visited {
   background-color: #F7F7F7;
 }
 
-/*Color textos */
+/*TEXTOS - COLOR */
 .text--color1 {
   color: #0D2B49;
 }
@@ -201,7 +201,7 @@ a:visited {
   font-weight: 400;
 }
 
-/*CARDS*/
+/*CARDS MISION CORPORATIVA*/
 .card {
   border-radius: 0.5rem;
   border: none;
@@ -285,7 +285,7 @@ a:visited {
   border-radius: 10px;
 }
 
-/*STAFF*/
+/*CARDS DE STAFF*/
 .staff {
   height: auto;
   padding-top: 20px;
@@ -337,7 +337,7 @@ a:visited {
   text-align: left;
 }
 
-/*GALERIA CARDS*/
+/*PANELES DE GALERÍA*/
 .galeria__card {
   background-color: #0D2B49;
   color: #F7F7F7;
@@ -359,7 +359,7 @@ a:visited {
           transform: scale(1.06);
 }
 
-/*VIDEO */
+/*VIDEO - INDEX */
 .corporative {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -372,7 +372,8 @@ a:visited {
   padding-top: 15px;
 }
 
-/*BOTÓN DE ML*/
+/* BOTONES */
+/*Botón de Mercadolibre*/
 .btn-ml {
   text-align: center;
   height: 70px;
@@ -397,7 +398,7 @@ a:visited {
   color: #F7F7F7;
 }
 
-/*BOTÓN DE WHATSAPP*/
+/*Botón de Whatsapp*/
 .whatsapp-left {
   background-image: url(../imgs/icon-whatsapp-left.png);
   background-size: cover;
@@ -417,13 +418,6 @@ a:visited {
   .whatsapp-left {
     top: 130px;
   }
-}
-
-/*Copyright*/
-.copyright {
-  color: #0D2B49;
-  background-color: #F7F7F7;
-  font-size: 75%;
 }
 
 /*SLIDER DE FOTOS - INDEX*/
@@ -799,7 +793,7 @@ header {
   height: 30px;
 }
 
-/*MOBILE*/
+/*FOOTER MOBILE*/
 @media only screen and (max-width: 767px) {
   .footer__section__coment p {
     padding-top: 15px;
@@ -830,5 +824,12 @@ header {
   .footer__section__map ul li a:visited {
     color: #F7F7F7;
   }
+}
+
+/*COPYRIGHT*/
+.copyright {
+  color: #0D2B49;
+  background-color: #F7F7F7;
+  font-size: 75%;
 }
 /*# sourceMappingURL=styles3.css.map */

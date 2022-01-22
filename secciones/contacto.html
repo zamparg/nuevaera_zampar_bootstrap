@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../css/styles3.css">
 </head>
 <body>
-    <header >
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
         <nav class="header__nav navbar navbar-expand-md section--bgcolor1">
             <a href="../index.html"><img src="../imgs/logo-desktop-negative.png" alt="Logo-NuevaEra" class="navbar-brand"></a>
             <!-- Toggler/collapsibe Button-->
@@ -31,28 +32,31 @@
             </div>
         </nav>
     </header>
-        <div class="encabezado encabezado--contacto container-fluid ">
-            <div class="row">
-                <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image offset-md-4 col-md-4 offset-md-4 offset-2 col-8 offset-2">
-                <h1 class="col-12">Contacto</h1>
-                <p class="col-12">Comunicate con nosotros para obtener una visita técnica y un presupuesto sin cargo</p>
-                <div class="col-12 mb-4 pl-0 pr-0">
-                    <div class="d-inline-block">
-                        <a href="mailto:contacto@nuevaeraservicios.com.ar">
-                        <img src="../imgs/icon-mail.png" alt="icon-mail" class="d-inline-block contacto--icon">
-                        <span class="d-inline-block contacto--text">contacto@nuevaeraservicios.com.ar</p>
-                        </a>
-                    </div>
-                    <div class="d-inline-block">
-                        <a href="tel:+5491125861985">
-                        <img src="../imgs/icon-whatsapp.png" alt="icon-mail" class="d-inline-block contacto--icon">
-                        <span class="d-inline-block contacto--text">+54 9 11 2586 1985</p>
-                        </a>
-                    </div>
+    <!-- FIN DE BARRA DE NAVEGACIÓN -->
+    <!-- ENCABEZADO -->
+    <div class="encabezado encabezado--contacto container-fluid ">
+        <div class="row">
+            <img src="../imgs/iso-sinfondo.png" alt="Logo-NuevaEra" class="encabezado__image offset-md-4 col-md-4 offset-md-4 offset-2 col-8 offset-2">
+            <h1 class="col-12">Contacto</h1>
+            <p class="col-12">Comunicate con nosotros para obtener una visita técnica y un presupuesto sin cargo</p>
+            <div class="col-12 mb-4 pl-0 pr-0">
+                <div class="d-inline-block">
+                    <a href="mailto:contacto@nuevaeraservicios.com.ar">
+                    <img src="../imgs/icon-mail.png" alt="icon-mail" class="d-inline-block contacto--icon">
+                    <span class="d-inline-block contacto--text">contacto@nuevaeraservicios.com.ar</p>
+                    </a>
                 </div>
-            </div>   
-        </div>
-        
+                <div class="d-inline-block">
+                    <a href="tel:+5491125861985">
+                    <img src="../imgs/icon-whatsapp.png" alt="icon-mail" class="d-inline-block contacto--icon">
+                    <span class="d-inline-block contacto--text">+54 9 11 2586 1985</p>
+                    </a>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <!-- FIN DE ENCABEZADO -->
+    <!-- FORMULARIO DE CONTACTO -->
     <main class="contacto__main container-fluid ">
         <div class="row">
             <section class=" form--contacto section--bgcolor1 col-xs-12  offset-xl-7 col-xl-5 offset-sm-4 col-sm-8">
@@ -109,16 +113,18 @@
             </section>
         </div>
     </main>
+    <!-- FIN DE FORMULARIO DE CONTACTO -->
     <!-- FOOTER -->
     <footer class="footer container-fluid section--bgcolor1">
         <div class="row">
+            <!-- Sección de Logo -->
             <div class="footer__section footer__section__main  text-center col-md-3 col-sm-12">
                 <img src="../imgs/logo-footer.png" alt="logo-footer" class="footer__section__logo">
             </div>
+            <!-- Sección de comentarios -->
             <div class="footer__section footer__section__coment  text-center col-md-3 col-sm-12">
                 <h4>Comentarios</h4>
-                <!-- Acá van comentarios de nuestros clientes, quizás se puedan tomar de ML?-->
-                            <!--Comentarios de clientes. Se puede tomar de ML?-->
+                <!-- Carousel de Comentarios -->
 
             <div id="carouselFooterControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner carousel-inner__comentarios--footer">
@@ -165,8 +171,9 @@
                 <span class="sr-only">Next</span>
                 </a>
             </div>
-    <!--Fin comentarios de Clientes -->
+            <!-- Fin de Carousel de Comentarios -->
             </div>
+            <!-- Sección Mapa de Sitio -->
             <div class="footer__section footer__section__map  text-center col-md-3 col-sm-6">
                 <h4>Nuestro Sitio</h4>
                 <ul>
@@ -177,11 +184,12 @@
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
+            <!-- Sección de Contacto -->
             <div class="footer__section footer__section__contact  text-center col-md-3 col-sm-6">
                 <div>
                     <h4 class="pb-2">¡Contactanos!</h4>
                             <a href="tel:+5491125861985">
-                                <p class="text-center"><i>1125861985</i></p>
+                                <p class="text-center"><i>+54 9 11 2586 1985</i></p>
                             </a>
                             <a href="mailto:contacto@nuevaeraservicios.com.ar">
                                 <p class="text-center"><i>contacto@nuevaeraservicios.com.ar</i></p>
@@ -198,6 +206,8 @@
             </div>
         </div>
     </footer>
+    <!-- FIN DE FOOTER -->
+    <!-- COPYRIGHT-->
     <div class="copyright section--bgcolor3 text-center ">
         <script type="text/javascript">
             copyright=new Date();
@@ -205,9 +215,10 @@
             document.write("Nueva Era Servicios Integrales © " + update + " " + "- Diseño: Gastón Zampar");
             </script>
     </div>
-
-</div>
-<a href="https://wa.link/z5n4pq"><div class="whatsapp-left"></div></a>
+    <!--FIN DE COPYRIGHT-->
+    <!-- BOTÓN DE WHATSAPP -->
+    <a href="https://wa.link/z5n4pq"><div class="whatsapp-left"></div></a>
+    <!-- FIN DE BOTÓN DE WHATSAPP -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
