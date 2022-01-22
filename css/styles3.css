@@ -683,6 +683,18 @@ header {
   padding-bottom: 99px;
 }
 
+@media (max-width: 500px) {
+  header {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1340px) {
+  header {
+    padding-bottom: 50px;
+  }
+}
+
 .navbar-expand-md {
   position: fixed;
   width: 100%;
@@ -736,7 +748,7 @@ header {
   margin-right: 0;
   margin-left: 0;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .footer__section {
@@ -751,7 +763,7 @@ header {
 }
 
 .footer__section__logo {
-  width: 70%;
+  width: 60%;
   padding-top: 10px;
 }
 
