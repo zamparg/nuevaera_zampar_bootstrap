@@ -280,22 +280,23 @@ $secciones:(
 }
 
 /*PANELES DE GALERÍA*/
-.galeria__card{
-    background-color: $color3;
-    color: $color1;
-}
-.galeria__card__img{
-    padding: 0;
+
+.galeria__card__img--container{
+    overflow: hidden;
     padding: 1em;
     border-radius: 25px;
+    
 }
 .galeria__card__img{
-    transition: all 0.5s;
-}
-.galeria__card__img:hover{
-    transform: scale(1.06);
+    width: 100%;
+    border-radius: 25px;
+    transition: all 0.7s;
 
 }
+.galeria__card__img:hover{
+    transform: scale(1.2);
+}
+ 
 /*VIDEO - INDEX */
 .corporative {
     align-items: center;
