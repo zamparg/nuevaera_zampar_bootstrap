@@ -29,6 +29,9 @@ Nueva Era es un equipo de profesionales que soluciona todos los problemas del ho
 * *SASS*: Archivos de scss compilados.
 
 ## Contenido desarrollado por:
+
 **Gastón Zampar**
+
 *Balder Project*
+
 En el marco del Curso de Desarrollo Web, brindado por *CoderHouse*
