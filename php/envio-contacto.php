@@ -11,7 +11,7 @@ $mail->IsSMTP();                                      // set mailer to
 $mail->Host = "mail.mmgdesigns.com.ar";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = "contacto@nuevaeraservicios.com.ar";  // SMTP username
-$mail->Password = "2yqxvtt6"; // SMTP password
+$mail->Password = "PASSWORD"; // SMTP password
 
 // PRUEBA
 

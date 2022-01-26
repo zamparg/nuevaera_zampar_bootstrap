@@ -21,7 +21,7 @@
  */
 
 # Aquí pon la clave secreta que obtuviste en la página de developers de Google
-define("CLAVE_SECRETA", "6LdWey4eAAAAAIjkXUJYjO0hezaysTGnfB43lp-_");
+define("CLAVE_SECRETA", "colocar clave aqui");
 
 # Comprobamos si enviaron el dato
 if (!isset($_POST["g-recaptcha-response"]) || empty($_POST["g-recaptcha-response"])) {
